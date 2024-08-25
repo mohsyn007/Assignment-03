@@ -40,7 +40,7 @@
 
 <body class="font-manrope lg:pl-5 lg:pr-5">
     <!-- navigation section -->
-    <header class="pt-8 md:pt-12 px-6 lg:px-0">
+    <header class="container mx-auto">
         <nav class="container mx-auto">
 
             <div class="navbar bg-base-100">
@@ -79,20 +79,25 @@
                     </ul>
                 </div>
                 <div class="navbar-end gap-8">
-                    <i class="fa-solid fa-magnifying-glass bg-nav-color rounded-lg p-1 "></i>
+                    <i class="fa-solid fa-magnifying-glass bg-nav-color hidden lg:block md:block rounded-lg p-1 "></i>
 
 
 
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a class="btn bg-btn-color font-semibold rounded-3xl">Book Consult <i
-                            class="fa-solid bg-black text-white rounded-2xl pl-2 p-2 -rotate-45 fa-arrow-right"></i></a>
+                    <i class="fa-solid fa-cart-shopping hidden md:block lg:block"></i>
+                    <div class="hidden md:flex items-center bg-[#ABEF5F] rounded-[32px] px-[20px] py-[12px] gap-1">
+                        <h3 class="text-[#1C1C1C] font-extrabold text-[18px]">Book Consult</h3>
+                        <div class="rounded-[32px]">
+                            <i class="fa-solid fa-arrow-right -rotate-45 p-2 bg-black text-white rounded-2xl"></i>
+
+
+                        </div>
+
+                    </div>
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </div>
 
                 </div>
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                    <i class="fa-solid fa-bars text-2xl"></i>
-                </div>
-
-            </div>
         </nav>
 
         <!-- banner-section -->
