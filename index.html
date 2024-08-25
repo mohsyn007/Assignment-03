@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"  data-theme="light">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -16,10 +16,93 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Custom -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'btn-color': 'rgb(171, 239, 95);',
+                        'nav-color': 'rgb(255, 255, 255)',
+                    }
+                }
+            }
+        }
+    </script>
+    <Style>
+        .font-manrope {
+            font-family: "manrope", sans-serif;
+        }
+    </Style>
 </head>
 
-<body>
-   
+<body class="font-manrope">
+    <!-- navigation section -->
+    <header class="pt-8 md:pt-12 px-6 lg:px-0">
+        <nav class="container mx-auto">
+
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+
+                            <li><a>Service</a></li>
+
+                            <li><a>Portfolio</a></li>
+
+                            <li><a>Blogs</a></li>
+
+                            <li><a>Contacts Us</a></li>
+
+                        </ul>
+                    </div>
+
+                    <a class="btn btn-ghost font-bold text-2xl"><i
+                            class="fa-solid fa-arrow-right -rotate-45 bg-btn-color rounded-2xl p-1"></i> Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class=" text-xl hover:text-red-500 duration-200"><a>Home</a></li>
+
+                        <li class=" text-xl hover:text-red-500 duration-300"><a>Service</a></li>
+
+                        <li class=" text-xl hover:text-red-500 duration-300"><a>Portfolio</a></li>
+
+                        <li class=" text-xl hover:text-red-500 duration-300"><a>Blogs</a></li>
+
+                        <li class=" text-xl hover:text-red-500 duration-300"><a>Contacts Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-8">
+                    <i class="fa-solid fa-magnifying-glass bg-nav-color rounded-lg p-1 "></i>
+
+
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a class="btn bg-btn-color font-semibold rounded-3xl">Book Consult <i
+                            class="fa-solid bg-black text-white rounded-2xl pl-2 p-2 -rotate-45 fa-arrow-right"></i></a>
+
+                </div>
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- banner-section -->
+
+    </header>
+    <main>
+    </main>
+    <footer>
+    </footer>
+
 
 </body>
 
